@@ -19,7 +19,7 @@ defmodule MutWeb.Router do
     get "/", PageController, :index
   end
 
-  scope "/api", MutWeb do
+  scope "/sim/api", MutWeb do
     pipe_through :api
 
     get "/get/:code/:num/state.txt", MutController, :show

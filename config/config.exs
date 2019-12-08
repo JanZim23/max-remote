@@ -12,7 +12,7 @@ config :mut,
 
 # Configures the endpoint
 config :mut, MutWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "localhost", path: "/mut"],
   secret_key_base: "GyV+GNWN0F0hIk43m8gELFm0nxHSuv3BOOi82eWwU+Er1Q8uQ16kAlRClQgn1vdt",
   render_errors: [view: MutWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Mut.PubSub, adapter: Phoenix.PubSub.PG2]
